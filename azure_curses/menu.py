@@ -82,7 +82,7 @@ class CursesWindow:
             
             if key == curses.ascii.ESC:
                 self.quit()
-                break
+                return
             elif key in KEYS_UP and current_selected_index != 0:
                 current_selected_index -= 1
             elif key in KEYS_DOWN and current_selected_index + 1 != len(list_items):
