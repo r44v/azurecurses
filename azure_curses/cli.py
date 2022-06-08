@@ -1,0 +1,1 @@
+from azure_curses import main
